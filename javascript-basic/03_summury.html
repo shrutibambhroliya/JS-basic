@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // javascript datatype 
+
+        // PRIMITIVE DATATYPES:
+        // string,number,boolean,null,undefined,symbol,bigint 
+
+        const abc = "hello world"
+        console.log(abc);
+
+        const num1 = 123;
+        const wer = 12.54;
+        console.log(typeof num1);
+        console.log(typeof wer);
+
+        const rtr = true;
+        console.log(rtr);
+
+        const yes = null;
+        console.log(yes);
+        let x;
+        console.log(x);
+
+        const hhh = Symbol("456");
+        const rrr = Symbol("456");
+        console.log(hhh === rrr);
+
+        const bigNumber = 1234567890123456789n;
+        console.log(typeof (bigNumber));
+
+        // NON-PRIMITIVE DATATYPES :
+
+        // array, object, function 
+        const nnn = ["hello", "world", "how", "must", "beautiful"];
+        console.log(nnn);
+        console.log(typeof nnn);
+
+        const sss = {
+            name: "hello",
+            age: 456,
+            std: 12
+        }
+        console.log(sss);
+        console.log(typeof sss);
+
+        const myFunction = function () {
+            "hello"
+        };
+        console.log(myFunction);
+        console.log(typeof (myFunction));
+
+        // stack-primitive type;
+
+        const name = "world";
+        const myName = "shruti";
+        // myName = name;
+        console.log(name);
+        console.log(myName);
+
+        // heap-non-primitive types;
+        const jjj = {
+            name: "hii",
+            email: "hii@123.com",
+            number: 456
+        };
+        console.log(jjj.email);
+
+        const lll = jjj;
+        lll.email = "hello!";
+        console.log(lll.email);
+
+    </script>
+</body>
+
+</html>

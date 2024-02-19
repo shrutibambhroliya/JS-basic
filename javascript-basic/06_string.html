@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const abc = "namaste";
+        const ddd = "world";
+        // this trick right 
+        const rrr = (`hello i am good ${abc} in my ${ddd}`);
+        console.log(rrr);
+        const a = "boat";
+        const b = "shoose";
+        // not trick right.. 
+        console.log(a + b);
+
+        // STRING METHOD 
+        const p = "hello my word!!"
+        console.log(p.length);
+        console.log(p[0]);
+
+        const r = new String("hello namaste landon...");
+        const n = "yes";
+        const y = /[A-Z]/g;
+        console.log(r);
+
+        console.log(`${r.charAt(1)}`);
+        console.log(r.length);
+        console.log(` ${r.charCodeAt('n')}`);
+        console.log(`${r.codePointAt(a)}`);
+
+        console.log(`${r.concat(" ", n)}`);
+        console.log(`${n.concat(" ", r)}`);
+
+        console.log(`${r.endsWith('landon...')}`);
+        console.log(`${r.endsWith('hello...')}`);
+
+        console.log(`${r.includes('h')}`);
+        console.log(`${r.indexOf('l')}`);
+
+        console.log(`${r.lastIndexOf('.')}`);
+        console.log(`${r.slice(1, 4)}`);
+        console.log(`${r.substring(2, 20)}`);
+        console.log(`${r.substr(5)}`);
+        console.log(`${r.toUpperCase(r)}`);
+        console.log(`${r.toLowerCase(r)}`);
+
+        const j = "       how are you      "
+        console.log(`${j.trim(j)}`);
+        console.log(`${j.trimStart(j)}`);
+        console.log(`${j.trimEnd(j)}`);
+
+        const v = "5"
+        console.log(`${v.padStart(7, '*')}`);
+        console.log(`${v.padStart(10, '0')}`);
+        console.log(`${v.padEnd(5, "+")}`);
+
+        console.log(`${r.repeat(5)}`);
+        console.log(`${r.replace("hello", "my")}`);
+        console.log(`${r.replaceAll("landon", "itly")}`);
+
+        const z = "a,b,c,d,e,f";
+        console.log(`${z.split("a")}`);
+
+        console.log((`${r.valueOf(r)}`));
+    </script>
+</body>
+
+</html>
