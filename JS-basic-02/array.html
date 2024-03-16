@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // array brackets in all datatype is available
+        // array brackets in all value call elements 
+        // array in index number start is 0
+
+        const arr1 = [11, 12, 13, 14, 15];
+        console.log(arr1);
+        console.log(typeof arr1);
+
+        const arr2 = new Array(16, 17, 18, 19, 20);
+        console.log(arr2);
+
+        arr1.push(16);
+        console.log("push", arr1);
+
+        const arr4 = arr1.pop();
+        console.log("pop", arr1);
+
+
+        console.log(arr1.includes(17));
+        console.log(arr1.includes(11));
+
+        console.log(arr1.indexOf(10));
+        console.log(arr1.indexOf(13));
+
+        const sArr = arr1.join();
+        console.log(typeof sArr);
+
+        arr1.unshift(17);
+        console.log("unshift", arr1);
+
+        arr1.shift();
+        console.log("shift", arr1);
+
+        // slice ka last element include nai  hota 
+        const newArr = arr1.slice(1, 3);
+        console.log("A", newArr);
+
+        console.log("B", arr1);
+
+        // splice mw jo index number likhe vo cut hoke console aata hai 
+        const nArr = arr1.splice(1, 3);
+        console.log("C", nArr);
+        console.log(arr1);
+
+    </script>
+</body>
+
+</html>
